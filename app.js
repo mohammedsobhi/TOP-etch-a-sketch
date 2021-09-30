@@ -1,6 +1,6 @@
 const DEFAULT_SIZE = 16;
 const DEFAULT_COLOR = "#333333";
-const DEFAULT_MODE = "randomColor";
+const DEFAULT_MODE = "oneColor";
 
 let size = DEFAULT_SIZE;
 let color = DEFAULT_COLOR;
