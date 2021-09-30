@@ -4,11 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Etch-a-Sketch</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <header>
+    <h1 class="title">Etch-a-Sketch</h1>
+  </header>
+
+  <main>
+    <!-- controls section -->
+    <section class="controls">
+      <div class="grid-size">
+        <label for="size">size: <span class="size-value">16 * 16</span></label>
+        <input type="range" name="size" id="size" value="16" min='4' max="64">
+      </div>
+      <div class="color control-element active">
+        <label for="color">Pick your color</label>
+        <input type="color" value="#333333" name="color" id="color">
+      </div>
+      <div class="random-colors control-element ">
+        <p>Random colors</p>
+        <div class="colors-img"></div>
+      </div>
+      <div class="eraser control-element">
+        <p>Eraser</p>
+        <div class="eraser-symbol"></div>
+      </div>
+      <div class="clear">
+        <button class="clear-button">Clear</button>
+      </div>
+    </section>
+    <!-- end controls section -->
+
+    <!-- sketch section -->
+    <section class="sketch-container">
+      <div class="sketch">
+      </div>
+    </section>
+    <!-- end sketch section -->
+  </main>
+
+  <footer>
+    <p class="footer-title">
+      Developed by Mohammed sobhi
+      <a href="https://github.com/mohammedsobhi/TOP-etch-a-sketch" target="_blank">
+        <img class="github-icon" src="assets/iconmonstr-github-3.svg" alt="github icon">
+      </a>
+    </p>
+  </footer>
   <script src="app.js"></script>
 </body>
 </html>
