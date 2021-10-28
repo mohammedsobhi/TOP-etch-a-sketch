@@ -87,9 +87,9 @@ function fillElement(e) {
 
     // random color
   } else if (mode === "randomColor") {
-    let R = Math.floor(Math.random() * 255);
-    let G = Math.floor(Math.random() * 255);
-    let B = Math.floor(Math.random() * 255);
+    let R = Math.floor(Math.random() * 256);
+    let G = Math.floor(Math.random() * 256);
+    let B = Math.floor(Math.random() * 256);
     e.target.style.backgroundColor = `rgb(${R},${G},${B}`;
 
     // white color as eraser
